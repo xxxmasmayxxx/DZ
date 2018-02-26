@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Sign Up Form
+	</title>
+</head>
+<body>
+		<h1 align="center">Hello! Welome to sign it...</h1> 
+		<table border="1" align="center">
+			<tr><td colspan="2" align="center">Sign Up Form </td></tr>
+			<tr><td>Login:</td> <td> <input type="text" name="login" placeholder="Your Login"> </td> </tr>
+			<tr><td>Password:</td> <td> <input type="password" name="password" placeholder="Your password"> </td> </tr>
+			<tr><td>E-mail:</td> <td> <input type="email" name="email" placeholder="Your E-mail"> </td> </tr>
+			<tr><td>Phone:</td> <td> <input type="text" name="phone" placeholder="Your Phone"> </td> </tr>
+			<tr><td colspan="2" align="right">Message:<input type="text" name="message" placeholder="Your Message">
+			</td></tr>
+			<tr><td align="center">Gender:</td><td align="center"><form>male<input type="radio" name="gender"><br>
+				female<input type="radio" name="gender"></form></td></tr>
+			<tr><td align="center"> Aplication for: </td> <td><form>Get Job<input type="checkbox" name="get job"><br>
+														Give Job<input type="checkbox" name="give job"><br>
+														Want to Help<input type="checkbox" name="help" checked></form>
+			</td>
+			<tr> <td>Continent:</td><td><form><select name="continent"> 
+																<option selected value="0">Your Continent Now</option>
+																<option value="ea">Eurazia</option>
+																<option value="na">North America</option>
+																<option value="sa">South Amirica</option>
+																<option value="au">Australia</option>
+																<option value="af">Africa</option>
+			<option value="an">Antarctida</option></select></form></td></tr>
+			<tr><td colspan="2" align="left"><form method="post" enctype="multipart/form-data">Upload Your Resume:
+				<input type="file" name="resume" multiple>
+			</form></td> </tr>
+
+		<tr><td colspan="2" align="center"><form><input type="submit" value="Submit"></form></td></tr>
+		</table>
+</body>
+</html>
