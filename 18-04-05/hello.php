@@ -18,9 +18,8 @@ if ($_POST){
     }
 } else {
 
-    echo 'please get back and write your name';
+    echo "hello " . $_SESSION['name'] . " !";
 }
 
-session_destroy();
 
 echo"<br><br><a href=\"index.php\">click here to get back</a>";
