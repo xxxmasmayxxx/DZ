@@ -1,18 +1,26 @@
 <?php
 
 session_start();
-if ($_POST['name'] != '') {
 
-    $_SESSION['name'] = $_POST['name'];
+if ($_POST){
 
-    echo "hello " . $_SESSION['name'] . " !";
+ if($_POST['name'] != '') {
 
+     $_SESSION['name'] = $_POST['name'];
+
+     echo "hello " . $_SESSION['name'] . " !";
+ }
+
+ elseif($_POST['name'] == ''){
+
+     echo "you are noname?";
+
+    }
 } else {
 
-    echo "you are noname?";
+    echo 'please get back and write your name';
 }
 
 session_destroy();
 
-echo"<br><br><a href=\"#\" onclick=\"history.back();\">get back</a>";
-//print_r($_GET);
+echo"<br><br><a href=\"index.php\">click here to get back</a>";
